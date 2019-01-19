@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   var num = parseInt(prompt("Nhap vao so nguyen to"));
+   if(kiemtraSo(num)==true){
+       alert("Day la so nguyen to");
+   }else {
+       alert("Day khong phai la so nguyen to :");
+   }
+   function kiemtraSo(num) {
+       if(num<2){
+           return false;
+       }
+       else {
+           for (var i =2 ;i<num;i++){
+               if(num%i ==0){
+                   return false;
+               }
+           }
+           return true;
+       }
+   }
+</script>
+</body>
+</html>

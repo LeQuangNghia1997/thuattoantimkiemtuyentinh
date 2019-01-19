@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function linearSearch(arr,value) {
+        for(var i=0;i<arr.length;i++){
+            if(arr[i]===value){
+                return i;
+            }
+        }
+        return -1
+    }
+    var number = [5,3,7,54,12,35,4,78,96,21,22,21,321,456]
+    var result = linearSearch(number,21);
+    document.write(result);
+</script>
+</body>
+</html>
